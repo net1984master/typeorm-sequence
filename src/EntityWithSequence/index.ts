@@ -25,13 +25,13 @@ export class EntityWithSequence {
             if (getConnection().options.type == "postgres") {
               query = `select nextval('${sequenceName}') as id`
             } else if (getConnection().options.type == "oracle") {
-              query = `SELECT ${sequenceName}.NEXTVAL FROM DUAL;`
+              query = `SELECT ${sequenceName}.NEXTVAL as id FROM DUAL`
             } else {
               throw new DatabaseTypeNotSupported()
             }
 
             const nextVal = await getManager().query(query)
-            this[columnName] = nextVal[0].id
+            this[columnName] = nextVal[0].id || nextVal[0].ID
           }
         }
         break
