@@ -1,6 +1,6 @@
 {
-  "name": "typeorm-sequence",
-  "version": "1.0.1",
+  "name": "typeorm-sequence-oracle-fixed",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "author": "Ian Oliveira",
@@ -19,7 +19,8 @@
   "keywords": [
     "typeorm",
     "sequence",
-    "postgres"
+    "postgres",
+    "oracle"
   ],
   "license": "ISC",
   "devDependencies": {
