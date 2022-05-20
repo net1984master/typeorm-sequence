@@ -5,14 +5,14 @@ Typeorm-sequence is a library that enables you to use a db sequence in a column 
 # Install via NPM
 
 ```
-  npm i typeorm-sequence
+  npm i typeorm-sequence-oracle-fixed
 ```
 
 # Usage
 
 ```
 import { Entity, Column, PrimaryColumn } from 'typeorm'
-import { NextVal, EntityWithSequence } from 'typeorm-sequence'
+import { NextVal, EntityWithSequence } from 'typeorm-sequence-oracle-fixed'
 
 @Entity({ name: 'client_table' })
 export class Client extends EntityWithSequence {
