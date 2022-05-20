@@ -1,4 +1,4 @@
-# Typeorm-sequence
+# Typeorm-sequence ........................[Original author Ian Oliveira](https://github.com/ianprogrammer/typeorm-sequence "Original")
 
 Typeorm-sequence is a library that enables you to use a db sequence in a column (it works only on postgres and oracle yet).
 
